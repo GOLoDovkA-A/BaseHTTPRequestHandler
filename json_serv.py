@@ -41,7 +41,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"received json_mass!")
 
 try :
-    httpd = HTTPServer(('localhost', 9502), SimpleHTTPRequestHandler)
+    httpd = HTTPServer(('localhost', 1438), SimpleHTTPRequestHandler)
     httpd.serve_forever()
 
 except KeyboardInterrupt:
